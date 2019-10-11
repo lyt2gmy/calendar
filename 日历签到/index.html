@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="calendar.mx.1.1.css"/>
+		<script src="../jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="calendar.mx.1.1.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<div id='calendar'></div>
+		
+	</body>
+	<script type="text/javascript">
+		$(function() {
+			Calendar.init("2015/01/08 16:13:11");//初始化时间：标准格式如：2015/01/08 16:13:11
+          	$("#calendar").html(Calendar.getCalendar([1,,2,5]));
+		});
+	</script>
+
+</html>
